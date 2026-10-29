@@ -185,6 +185,7 @@ p{margin:0 0 14px;max-width:62ch;text-wrap:pretty}
   background:linear-gradient(var(--paper),var(--paper)) right 10px bottom 10px/12px 1px no-repeat,linear-gradient(var(--paper),var(--paper)) right 10px bottom 10px/1px 12px no-repeat;opacity:.85}
 .shot img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.06);transition:transform 1.2s}
 .shot:hover img{transform:scale(1)}
+.shot img.full-frame{object-fit:contain;transform:none}
 .shot .date{position:absolute;left:0;top:0;font:500 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;background:var(--paper);color:var(--void);padding:6px 8px}
 .shot figcaption{font-size:15px;color:var(--muted);max-width:56ch}
 .shot figcaption b{display:block;font:400 22px/1.1 var(--display);letter-spacing:.04em;text-transform:uppercase;color:var(--paper);margin-bottom:4px}
@@ -441,7 +442,9 @@ footer .in{max-width:1180px;margin-inline:auto;display:flex;justify-content:spac
       <figure class="shot"><div class="frame"><img src="media/journal/star-shepherd-scale-20261027.webp" alt="Planetary scale and orbital space" loading="lazy"><span class="date">27 Oct 2026</span></div><figcaption><b>Scale</b>How big the planets are, and how much space sits between orbits.</figcaption></figure>
       <figure class="shot"><div class="frame"><img src="media/journal/crescent-world-20261028.webp" alt="A blue-lit planetary rim against the textured star" loading="lazy"><span class="date">28 Oct 2026</span></div><figcaption><b>Silhouette</b>A blue rim against the star and a thin, edge-on disc.</figcaption></figure>
       <figure class="shot"><div class="frame"><img src="media/journal/stellar-surface-scale-20261028.webp" alt="The star's surface filling the frame edge, an asteroid trail in front" loading="lazy"><span class="date">28 Oct 2026</span></div><figcaption><b>Close pass</b>The star's surface at the edge of frame, with an asteroid trail in front.</figcaption></figure>
-      <div class="endcard">Three weeks of captures. More soon.</div>
+      <figure class="shot"><div class="frame"><img src="media/journal/star-and-worlds-latest.png" alt="A small world silhouetted against a bright star in a golden disc" loading="lazy"><span class="date">29 Oct 2026</span></div><figcaption><b>Across the star</b>A small world silhouetted against the bright face of the star.</figcaption></figure>
+      <figure class="shot"><div class="frame"><img class="full-frame" src="media/journal/worlds-in-disc-latest.png" alt="Small worlds spread across a golden disc beside a bright star" loading="lazy"><span class="date">29 Oct 2026</span></div><figcaption><b>Worlds in the disc</b>Small worlds spread through the glowing disc.</figcaption></figure>
+      <div class="endcard">More captures soon.</div>
     </div>
   </div>
 </section>
