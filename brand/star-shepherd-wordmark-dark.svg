@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1543.0 155.0" width="1543" height="155">
+  <title>Star Shepherd</title>
+  <path d="M97 0 H25 A25 25 0 0 0 25 50 H73 A25 25 0 0 1 73 100 H1" transform="translate(27.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M0 0 H92 M46 0 V100" transform="translate(155.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M0 100 L52 0 L104 100" transform="translate(277.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M0 100 V0 H62 A25 25 0 0 1 62 50 H0 M54 50 L92 100" transform="translate(411.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M97 0 H25 A25 25 0 0 0 25 50 H73 A25 25 0 0 1 73 100 H1" transform="translate(595.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M0 0 V100 M92 0 V100 M0 50 H92" transform="translate(723.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M84 0 H0 V100 H84 M0 50 H70" transform="translate(845.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M0.000 100 V31.761 A36 29.5 -10 1 1 46.904 57.281 A8.5 8.5 0 0 0 41.084 64.482" transform="translate(959.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M56.14148687851805 18.13378910521227 Q57.39148687851805 24.88378910521227 64.14148687851805 26.13378910521227 Q57.39148687851805 27.38378910521227 56.14148687851805 34.13378910521227 Q54.89148687851805 27.38378910521227 48.14148687851805 26.13378910521227 Q54.89148687851805 24.88378910521227 56.14148687851805 18.13378910521227 Z" transform="translate(959.50 27.50)" fill="#E9C46A"/>
+  <path d="M0 0 V100 M92 0 V100 M0 50 H92" transform="translate(1061.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M84 0 H0 V100 H84 M0 50 H70" transform="translate(1183.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M0 100 V0 H62 A25 25 0 0 1 62 50 H0 M54 50 L92 100" transform="translate(1297.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+  <path d="M0 0 H46 A50 50 0 0 1 46 100 H0 Z" transform="translate(1419.50 27.50)" fill="none" stroke="#ECE6D6" stroke-width="7" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="4"/>
+</svg>
