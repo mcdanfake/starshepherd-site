@@ -6,7 +6,7 @@
 <style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Star Shepherd</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="Star Shepherd: shape a young solar system from dust. An early solar-system sandbox prototype from MYTHVECTOR Games.">
+<meta name="description" content="Star Shepherd: shape a young solar system from dust. An early-alpha solar-system sandbox from MYTHVECTOR Games. Follow development news and real playtest captures.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -192,6 +192,26 @@ p{margin:0 0 14px;max-width:62ch;text-wrap:pretty}
 .reel .endcard{width:min(60vw,380px);flex:none;align-self:center;font:300 clamp(24px,2.6vw,32px)/1.15 var(--display);text-transform:uppercase;letter-spacing:.03em;color:var(--paper)}
 .journal .foot{font:400 11px/1.5 var(--mono);letter-spacing:.04em;color:var(--muted);max-width:70ch}
 
+/* November development dispatch */
+.dispatch{position:relative;z-index:2;padding:100px max(20px,8vw);background:rgba(5,7,12,.88);border-block:1px solid var(--rule);scroll-margin-top:65px}
+.news-active .hud{display:none}
+.dispatch .inner{max-width:1180px;margin:auto}
+.dispatch h2{margin:12px 0 18px}
+.dispatch .intro{max-width:72ch;color:var(--muted)}
+.dispatch-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:28px;margin-top:32px;align-items:start}
+.dispatch figure{margin:0}
+.dispatch .capture{display:block;border:1px solid var(--rule);background:#000}
+.dispatch img{display:block;width:100%;height:auto}
+.dispatch figcaption{color:var(--muted);font-size:14px;line-height:1.55;padding:12px 0 18px}
+.dispatch figcaption b{display:block;color:var(--paper);font:400 25px/1.2 var(--display);text-transform:uppercase;letter-spacing:.04em;margin-bottom:5px}
+.dispatch .news-copy{padding:24px;border:1px solid var(--rule);background:var(--panel);margin-bottom:24px}
+.dispatch h3{font:400 30px/1.15 var(--display);text-transform:uppercase;margin:0 0 14px}
+.dispatch .news-copy p{font-size:16px;line-height:1.6;margin:0 0 14px}
+.dispatch .news-copy p:last-child{margin-bottom:0}
+.dispatch .stamp{font:400 11px/1.5 var(--mono);letter-spacing:.08em;color:var(--gold);text-transform:uppercase}
+.dispatch .gallery-note{font-size:13px;color:var(--muted);margin-top:20px}
+@media(max-width:800px){.dispatch-grid{grid-template-columns:1fr}.dispatch{padding:75px 20px}.dispatch .news-copy{padding:20px}}
+
 /* the long view */
 .ch.looks{padding-top:85vh}
 .looks h2,.looks .lede,.looks p{text-shadow:0 2px 16px #05070c,0 0 3px #05070c}
@@ -276,6 +296,7 @@ footer .in{max-width:1180px;margin-inline:auto;display:flex;justify-content:spac
   </a>
   <div class="right">
     <a class="mv" href="https://mythvectorgames.com" target="_blank" rel="noopener">MYTHVECTOR Games ↗</a>
+    <a href="#news">Latest news</a>
     <button id="pause" type="button" aria-pressed="false">Pause visuals</button>
   </div>
 </header>
@@ -305,8 +326,48 @@ footer .in{max-width:1180px;margin-inline:auto;display:flex;justify-content:spac
     </svg>
   </h1>
   <p class="tagline">Shape a solar system from the dust around a young star.</p>
-  <div class="meta"><span>Solar-system sandbox</span><span>·</span><span>In prototype development</span></div>
+  <div class="meta"><span>Solar-system sandbox</span><span>·</span><span>In early alpha</span></div>
   <a class="cue" href="#disc">Scroll</a>
+</section>
+
+<section class="dispatch" id="news" data-scene="journal" data-epoch="12 Nov 2026" data-label="Latest news">
+  <div class="inner">
+    <div class="eyebrow"><b>FIELD NOTES</b> Development dispatch<span class="stripe"></span></div>
+    <h2>A world worth <em>protecting</em></h2>
+    <p class="intro">A milestone from the alpha: Daniel grew a habitable world through normal play, with a moon alongside it. Star Shepherd is still rough around the edges, but the journey from dust to a world you want to keep is becoming something you can actually play.</p>
+    <div class="dispatch-grid">
+      <div>
+        <figure>
+          <a class="capture" href="media/journal/first-habitable-world-20261110.png" target="_blank" rel="noopener" aria-label="Open the first player-grown habitable world screenshot at full size"><img src="media/journal/first-habitable-world-20261110.png" alt="A player-grown habitable world with its moon in a Star Shepherd alpha playtest" loading="lazy"></a>
+          <figcaption><b>Our first player-grown habitable world</b>Captured during Alpha 0.0.2 playtesting on 10 November. Grown through ordinary play, not a concept painting. A small moon came along for the ride.</figcaption>
+        </figure>
+        <figure>
+          <a class="capture" href="media/journal/moon-system-nov2026.png" target="_blank" rel="noopener" aria-label="Open the moon-system playtest screenshot at full size"><img src="media/journal/moon-system-nov2026.png" alt="A planetary moon system in Star Shepherd's November playtests" loading="lazy"></a>
+          <figcaption><b>Worlds with company</b>A November 8 playtest viewed from above. Moons give each system more character; their proportions and behaviour after a host is destroyed are still being tuned.</figcaption>
+        </figure>
+      </div>
+      <div>
+        <article class="news-copy">
+          <p class="stamp"><time datetime="2026-11-12">12 November 2026</time> · Alpha 0.0.4 playtested</p>
+          <h3>Small systems.<br>Big consequences.</h3>
+          <p>Recent alpha builds bring gas giants, textured moons and planet-breaking impacts into the evolving system. When a world becomes suitable for life, the player can choose to protect it as a sanctuary.</p>
+          <p>The latest hands-on playtest found a clearer stellar danger boundary, smoother-looking world transitions and working sanctuary steering against aimed threats. Plus and minus now control simulation speed, and orbit lines no longer draw over the planet panel.</p>
+          <p>This is a playable development candidate, not a finished or publicly released game. Gas-giant surfaces and sky art still need another pass. Moon sizing needs refinement, and protection against a genuine planet or moon collision still needs a dedicated hands-on test.</p>
+        </article>
+        <figure>
+          <a class="capture" href="media/journal/stellar-view-nov2026.png" target="_blank" rel="noopener" aria-label="Open the November system playtest screenshot at full size"><img src="media/journal/stellar-view-nov2026.png" alt="A developing Star Shepherd system seen against its bright star" loading="lazy"></a>
+          <figcaption><b>Made in the playtest</b>A November 8 playtest captured new moon textures, a gas giant and the star in one view. This is an earlier development image, not a claim that the latest visual work is finished.</figcaption>
+        </figure>
+        <article class="news-copy">
+          <p class="stamp">Next refinement · not yet delivered</p>
+          <h3>More life in the details</h3>
+          <p>The next brief focuses on richer gas giants and skies, better moon scale, oceans visibly boiling into steam as worlds heat, and double-click camera following. A separate UI design study is planned for review.</p>
+          <p>These are development goals, not a release promise. Playtesting will decide what earns its place.</p>
+        </article>
+      </div>
+    </div>
+    <p class="gallery-note">Real gameplay captures from different alpha playtests. Click an image to inspect it at full size. No generated concept art is presented here as gameplay.</p>
+  </div>
 </section>
 
 <section class="ch" id="disc" data-scene="disc" data-epoch="≈ 100,000 yr" data-label="The disc">
@@ -421,7 +482,7 @@ footer .in{max-width:1180px;margin-inline:auto;display:flex;justify-content:spac
     <video id="vid" controls playsinline preload="metadata" poster="media/trailer-poster.jpg">
       <source src="media/star-shepherd-trailer-720p.mp4" type="video/mp4">
     </video>
-    <div class="note"><span>Concept trailer, not in-engine footage</span><span>Moons and later stages are concepts</span></div>
+    <div class="note"><span>Concept trailer, not in-engine footage</span><span>Later stages remain concepts</span></div>
   </div></div>
 </section>
 
@@ -477,11 +538,11 @@ footer .in{max-width:1180px;margin-inline:auto;display:flex;justify-content:spac
   </div></div>
 </section>
 
-<section class="ch c" id="status" data-scene="status" data-epoch="31 Oct 2026" data-label="Status">
+<section class="ch c" id="status" data-scene="status" data-epoch="12 Nov 2026" data-label="Status">
   <div class="wrap"><div class="bare rv" style="max-width:1080px">
     <div class="eyebrow"><b>SS-12</b> Status</div>
     <h2>Where things <em>stand</em></h2>
-    <p class="lede">Star Shepherd is an early single-player prototype undergoing playtests, not a released game. There is no release date yet. Features present in a build can still need substantial refinement.</p>
+    <p class="lede">Star Shepherd is an early-alpha single-player sandbox undergoing playtests, not a released game. Alpha 0.0.4 has been playtested; its visual and gameplay refinements are still in progress. There is no release date yet.</p>
     <div class="board">
       <div class="col p"><h3>In the prototype</h3><small>In the build and being playtested</small><ul>
         <li>A young star and a finite dust disc</li>
@@ -489,17 +550,18 @@ footer .in{max-width:1180px;margin-inline:auto;display:flex;justify-content:spac
         <li>Collisions where the surfaces meet</li>
         <li>Molten young worlds that cool</li>
         <li>Thrown asteroids, and icy comets with tails</li>
-        <li>Eclipses and planetary shadows</li>
+        <li>Gas giants, textured moons and eclipses</li>
+        <li>Habitable worlds and player-chosen sanctuary protection</li>
+        <li>Planet-breaking asteroids and released moons</li>
         <li>Habitable-zone view, time controls, save and load</li>
       </ul></div>
-      <div class="col d"><h3>Current focus</h3><small>Refining what the player sees</small><ul>
-        <li>Dust-ring presentation: stable detail while zooming or crossing the disc</li>
-        <li>Lighting and the readability of worlds within the dust</li>
-        <li>Atmospheres and water: clearer presentation of changing conditions</li>
-        <li>Clearer explanations of why a world changed</li>
-        <li>Better camera follow and world selection</li>
-        <li>A field-notebook style interface</li>
-        <li>Planet changes that hold up in more conditions</li>
+      <div class="col d"><h3>Current focus</h3><small>Following the latest alpha playtest</small><ul>
+        <li>More convincing gas-giant surfaces and sky art</li>
+        <li>Readable moon sizes that remain consistent after release</li>
+        <li>Visible water and steam changes as a world heats</li>
+        <li>A dedicated sanctuary collision scenario</li>
+        <li>Double-click camera following</li>
+        <li>A more useful, cohesive interface design</li>
       </ul></div>
       <div class="col k"><h3>Concept</h3><small>Being explored, no schedule</small><ul>
         <li>Moons and rings from impacts</li>
@@ -538,7 +600,7 @@ footer .in{max-width:1180px;margin-inline:auto;display:flex;justify-content:spac
 </main>
 
 <footer><div class="in">
-  <span><span class="stripe" style="vertical-align:middle;margin-right:12px"></span>Star Shepherd is in prototype development. No release date has been announced.</span>
+  <span><span class="stripe" style="vertical-align:middle;margin-right:12px"></span>Star Shepherd is in early-alpha development. No release date has been announced.</span>
   <span>The trailer uses concept footage; development captures show the prototype.</span>
   <span>&copy; 2026 MYTHVECTOR Games</span>
 </div></footer>
@@ -682,6 +744,7 @@ secs.forEach((s,i)=>{
 let roll = 0;
 function updateHud(){
   const s = secs[active], to = s.dataset.epoch;
+  document.body.classList.toggle("news-active", s.id === "news");
   chap.textContent = s.dataset.label;
   clearInterval(roll);
   if(reduce){ epoch.textContent = to; } else { let n = 0;
