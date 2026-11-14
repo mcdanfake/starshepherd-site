@@ -772,7 +772,7 @@ secs.forEach((s,i)=>{
 let roll = 0;
 function updateHud(){
   const s = secs[active], to = s.dataset.epoch;
-  document.body.classList.toggle("news-active", s.id === "news");
+  document.body.classList.toggle("news-active", s.id === "news" || s.id === "build-timeline");
   chap.textContent = s.dataset.label;
   clearInterval(roll);
   if(reduce){ epoch.textContent = to; } else { let n = 0;
