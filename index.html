@@ -212,6 +212,14 @@ p{margin:0 0 14px;max-width:62ch;text-wrap:pretty}
 .dispatch .gallery-note{font-size:13px;color:var(--muted);margin-top:20px}
 @media(max-width:800px){.dispatch-grid{grid-template-columns:1fr}.dispatch{padding:75px 20px}.dispatch .news-copy{padding:20px}}
 
+/* Build-to-build gameplay timeline */
+.timeline-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:32px}
+.timeline-grid .capture{height:220px;display:flex;align-items:center;justify-content:center}
+.timeline-grid img{max-height:100%;object-fit:contain}
+.timeline-grid .stamp{display:block;margin-bottom:8px}
+@media(max-width:1000px){.timeline-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.timeline-grid{grid-template-columns:1fr}.timeline-grid .capture{height:auto}.timeline-grid img{max-height:none}}
+
 /* the long view */
 .ch.looks{padding-top:85vh}
 .looks h2,.looks .lede,.looks p{text-shadow:0 2px 16px #05070c,0 0 3px #05070c}
@@ -328,6 +336,26 @@ footer .in{max-width:1180px;margin-inline:auto;display:flex;justify-content:spac
   <p class="tagline">Shape a solar system from the dust around a young star.</p>
   <div class="meta"><span>Solar-system sandbox</span><span>·</span><span>In early alpha</span></div>
   <a class="cue" href="#disc">Scroll</a>
+</section>
+
+<section class="dispatch build-timeline" id="build-timeline" data-scene="journal" data-epoch="6 Oct – 14 Nov 2026" data-label="Build timeline">
+  <div class="inner">
+    <div class="eyebrow"><b>IN DEVELOPMENT</b> A visual timeline<span class="stripe"></span></div>
+    <h2>From first worlds to <em>0.0.8</em></h2>
+    <p class="intro">Real captures from the early prototype through Alpha 0.0.8. A look at how Star Shepherd is taking shape, one playtest at a time.</p>
+    <div class="timeline-grid">
+      <figure><a class="capture" href="media/journal/early-system-20261006.webp" target="_blank" rel="noopener" aria-label="Open first system at full size"><img src="media/journal/early-system-20261006.webp" alt="Young worlds gathering around a bright star." loading="lazy" decoding="async"></a><figcaption><span class="stamp">6 Oct 2026 · Early prototype</span><b>First system</b>Young worlds gathering around a bright star.</figcaption></figure>
+      <figure><a class="capture" href="media/journal/molten-world-eclipse-20261013.webp" target="_blank" rel="noopener" aria-label="Open hot young worlds at full size"><img src="media/journal/molten-world-eclipse-20261013.webp" alt="Molten surfaces and the beginnings of darker crust." loading="lazy" decoding="async"></a><figcaption><span class="stamp">13 Oct 2026 · Prototype</span><b>Hot young worlds</b>Molten surfaces and the beginnings of darker crust.</figcaption></figure>
+      <figure><a class="capture" href="media/journal/star-aesthetic-orbit-20261022.webp" target="_blank" rel="noopener" aria-label="Open a star with character at full size"><img src="media/journal/star-aesthetic-orbit-20261022.webp" alt="A new stellar surface, seen against the dusty disc." loading="lazy" decoding="async"></a><figcaption><span class="stamp">22 Oct 2026 · Prototype</span><b>A star with character</b>A new stellar surface, seen against the dusty disc.</figcaption></figure>
+      <figure><a class="capture" href="media/journal/blue-white-world-20261025.webp" target="_blank" rel="noopener" aria-label="Open blue and white at full size"><img src="media/journal/blue-white-world-20261025.webp" alt="Atmosphere and light beginning to give each world a presence." loading="lazy" decoding="async"></a><figcaption><span class="stamp">25 Oct 2026 · Prototype</span><b>Blue and white</b>Atmosphere and light beginning to give each world a presence.</figcaption></figure>
+      <figure><a class="capture" href="media/journal/worlds-in-disc-latest.png" target="_blank" rel="noopener" aria-label="Open room to grow at full size"><img src="media/journal/worlds-in-disc-latest.png" alt="Worlds spread across the disc around a young star." loading="lazy" decoding="async"></a><figcaption><span class="stamp">29 Oct 2026 · Prototype</span><b>Room to grow</b>Worlds spread across the disc around a young star.</figcaption></figure>
+      <figure><a class="capture" href="media/journal/first-habitable-world-20261110.png" target="_blank" rel="noopener" aria-label="Open a world worth keeping at full size"><img src="media/journal/first-habitable-world-20261110.png" alt="The first player-grown habitable world, with a moon alongside it." loading="lazy" decoding="async"></a><figcaption><span class="stamp">10 Nov 2026 · Alpha 0.0.2</span><b>A world worth keeping</b>The first player-grown habitable world, with a moon alongside it.</figcaption></figure>
+      <figure><a class="capture" href="media/journal/a008-giant-and-moons-20261114.png" target="_blank" rel="noopener" aria-label="Open a system coming alive at full size"><img src="media/journal/a008-giant-and-moons-20261114.png" alt="A crescent-lit giant and its neighbours amid dust and stars." loading="lazy" decoding="async"></a><figcaption><span class="stamp">14 Nov 2026 · Alpha 0.0.8 playtest</span><b>A system coming alive</b>A crescent-lit giant and its neighbours amid dust and stars.</figcaption></figure>
+      <figure><a class="capture" href="media/journal/a008-stellar-scale-20261114.png" target="_blank" rel="noopener" aria-label="Open stellar scale at full size"><img src="media/journal/a008-stellar-scale-20261114.png" alt="Small worlds set against the light of an enormous star." loading="lazy" decoding="async"></a><figcaption><span class="stamp">14 Nov 2026 · Alpha 0.0.8 playtest</span><b>Stellar scale</b>Small worlds set against the light of an enormous star.</figcaption></figure>
+      <figure><a class="capture" href="media/journal/a008-banded-giant-20261114.png" target="_blank" rel="noopener" aria-label="Open giants up close at full size"><img src="media/journal/a008-banded-giant-20261114.png" alt="Warm bands and a deep night side in the latest owner playtest." loading="lazy" decoding="async"></a><figcaption><span class="stamp">14 Nov 2026 · Alpha 0.0.8 playtest</span><b>Giants up close</b>Warm bands and a deep night side in the latest owner playtest.</figcaption></figure>
+    </div>
+    <p class="gallery-note">Actual in-development gameplay, not concept art. Earlier captures are labelled by date where a numbered build is not established. Alpha 0.0.8 is an owner-playtest candidate, not a final release. Click any image for the full-size capture.</p>
+  </div>
 </section>
 
 <section class="dispatch" id="news" data-scene="journal" data-epoch="12 Nov 2026" data-label="Latest news">
